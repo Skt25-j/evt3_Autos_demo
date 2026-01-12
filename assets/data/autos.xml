@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Autos</title>
+                <title type="sub">Edizione digitale</title>
+                <author xml:id="US">Stefano Tuscano</author>
+                <respStmt>
+                    <resp>Edizione critica e codifica di:</resp>
+                    <name xml:id="ST">Sara Tavarnesi</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <interpGrp>
+                        <interp xml:id="altVariant">Varianti alternative.</interp>
+                    </interpGrp>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Archivio Stefano Tuscano</authority>
+            </publicationStmt>
+            <sourceDesc>
+                <listWit>
+                    <witness xml:id="MS_Autos">Manoscritto di Autos <msDesc>
+                            <msIdentifier>
+                                <settlement>Pienza</settlement>
+                                <repository>Archivio Stefano Tuscano presso Fondazione San Carlo Borromeo</repository>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+                    <witness xml:id="Autos">Edizione <emph rend="italic">Autos</emph></witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation corresp="#Autos" resp="#ST">
+                <listChange ordered="true">
+                    <change xml:id="strato-0">Penna A <note>penna nera con cui scrive il testo di Autos da 1r1 a 17r1 – esclusi i versi –</note></change><!--Da come scrive si vede che sono correzioni avvenute in un secondo momento-->
+                    <change xml:id="strato-1">Penna B <note>penna nera con cui scrive a partire da 17r1 fino a 7r2 – esclusi i versi –; con questa penna e con questo tipo di scrittura Tuscano ha anche prodotto alcune correzioni nelle parti precedenti e inserito i numeri in alto a destra sui recti dei due quaderni fino a 7r2 – corretti successivamente a lapis –.</note></change>
+                    <change xml:id="strato-2">Penna C <note>penna nera con cui l’autore compila i versi a partire 18v1 fino a 6v2 e, successivamente, i recti da 7r2 a 22r2. Con il medesimo inchiostro inserisce i numeri di pagina sui recti a partire da 8r2, i quali non vengono più corretti fino alla conclusione del quaderno.</note></change>
+                    <change xml:id="strato-3">Penna D <note>penna nera con cui scrive i recti a partire da metà 8r2, per la precisione dall’inizio del paragrafo Montalcino, fino a 11r2; ne è prova il repentino cambio di grafia.</note></change>
+                    <change xml:id="strato-4">Lapis E <note>lapis utilizzato per l’inserimento dei numeri di pagina sui versi scritti successivamente rispetto ai recti e la correzione del numero su quest’ultimi a partire da 18v1 fino a 7r2; a questi, si aggiungono correzioni e postille sporadiche.</note></change>
+                    <change xml:id="strato-5">Penna F <note>penna nera con cui l’autore termina di scrivere i recti del secondo quaderno, fatta eccezione per le parti conclusive a penna: va da 12r2 a fine di 22r2.</note></change>
+                    <change xml:id="strato-6">Penna G  <note>penna nera con cui viene scritto l’appunto slegato presenta a 16v2 e 17v2, datato agosto 1911</note> </change>
+                    <change xml:id="strato-7">Penna H <note>penna di colore blu con cui Tuscano chiude il secondo diario e corregge alcune parti</note> </change>
+                    <change xml:id="strato-8">Lapis I <note>lapis con cui apporta vari interventi nel secondo quaderno</note></change>
+                    <change xml:id="strato-9">Matita L <note>matita di colore blu con cui apporta alcuni interventi</note></change>
+                    <change xml:id="strato-10">Matita M <note>matita di colore rosso con cui apporta alcuni interventi</note></change>
+                    <change xml:id="strato-11">Penna N <note>penna di colore blu, per intensità dell’inchiostro sensibilmente diversa dalla precedente penna H, con cui l’autore apporta la nota datata 1921 sull’interno della copertina. </note></change>
+                    <change xml:id="strato-X">Lapis X <note>lapis con una mina molto scura, utilizzato soltanto per alcune cassature a 24r2.</note></change>
+                    <change xml:id="strato-Y">Penna Y <note>penna di colore nero scuro, non tendente al marrone come le altre, che interviene in pochi e circoscritti punti del testo, di difficile collocabilità rispetto alla cronologia degli interventi.</note></change>
+                </listChange>
+
+            </creation>
+        </profileDesc>
+        <encodingDesc>
+            <variantEncoding location="internal" method="parallel-segmentation"/>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front> <!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
+        </front>
+        <body>
+            <div type="page" xml:id="Copertina_esterno">
+                <pb n="esterno_Copertina" facs="Cp_r.jpg"/>
+                <ab rend="align-center">
+                    <lb />
+                    <lb n="1"/>
+                    primi appunti 
+                    <lb n="2"/>
+                    <hi rend="underline" n="5">Autobiografici - </hi>
+                    <lb n="3"/>(da 10 a 15 anni) - 1910 -
+                    <lb />
+                    <lb />
+                    <lb />
+                    <lb />
+                    <mod change="#strato-0">
+                        <mod change="strato-4">
+                            <del>
+                                <del rend="strikethrough" seq="5"><del rend="strikethrough" seq="1">Autopsicologia</del>
+                                    <del rend="strikethrough" seq="2"> - (Autologia)</del><lb/>
+                                    <del rend="strikethrough" seq="3" >Wstefano</del></del> </del>  </mod>
+                        <lb n="4"/>
+                        <add place="below" seq="4">- Autos -</add> 
+                    </mod>
+                    <note n="1" resp="ST">Autos è titolo scelto da Tuscano dopo diversi tentativi, cancellati sia durante la prima stesura che successivamente, con il lapis E</note>
+                    <mod change="#strato-4">
+                        <add>
+                            <del rend="strikethrough">Pazzo d'Italia</del>
+                        </add>
+                    </mod>
+                    
+                    <!-- Annidamento dei mod: funziona la visualizzazione ma è corretta formarlmente? un evento dello strato-4 può essere contenuto già nello strato-0?
+                         Altra codifica:
+                         <mod>
+                         <subst><del rend="strikethrough" seq="1" change="#strato-0 #strato-4">Autopsicologia</del>
+                         <del rend="strikethrough" seq="2" change="#strato-0 #strato-4"> - (Autologia)</del><lb/>
+                         <del rend="strikethrough" seq="3" change="#strato-0 #strato-4">Wstefano</del><lb/>
+                         <add place="below" seq="4" change="strato-0">- Autos -</add> </subst>
+                         </mod> Usare l'attributo gòobale change per indicare che la cancellazione è avvenuta sia nello strato-0 che nello strato-4: non funziona la visualizzazione
+                         
+                    -->
+                    
+                    <!--Si è tolto <subst> per poter ribadire che i primi tentativi sono stati cancellati nuovamente nello strato-4; subst non ammette un <mod> dentro di sè; riscrivere le cose cancellate avrebbe portato, nella visualizzazione, a una doppia copia del testo-->
+                    
+                </ab>
+            </div>
+            <div type="page" xml:id="Copertina_interno">
+                <ab rend="indent">
+                    <pb n="interno_Copertina" facs="Cp_v.jpg"/>
+                    <mod change="#strato-11">
+                        <add> <lb n="1"/>Queste pagine ingenue conten-
+                            <lb n="2"/>gono profonde verità. Dopo
+                            <lb n="3"/>quasi vent’anni, rileggendole,
+                            <lb n="4"/>riconosco me stesso d’allora,
+                            <lb n="5"/>quasi eguale a quello d’oggi.
+                            <lb n="6"/><add rend="indent-start">Qua</add><mod> 
+                                <subst>
+                                    <del rend="strikethrough" seq="1">nt'</del>
+                                    <add place="above" seq="2">le</add>
+                                </subst>
+                            </mod> insegnamento
+                            <lb n="7"/>e quale merito me ne viene!
+                            <lb n="8"/>S’io mi fossi corretto dai vizî
+                            <lb n="9"/>d’allora, oggi sarei forse più
+                            <lb n="10"/>fortunato. Forse?!.
+                            <lb n="11"/><add rend="indent-center">Tuscano</add> <!-- Poco ortodosso-->
+                            <lb n="12"/>1921</add></mod> 
+                    
+                </ab>
+            </div>
+            <div type="page" xml:id="Quaderno1_1r">
+                <pb n="1r1" facs="1r.jpg"/> 
+                <ab rend="indent">
+                    <fw place="top-left" type="date"><lb n="1"/>
+                        <mod change="#strato-1"><add>Novembre 1910</add></mod>
+                    </fw>
+                    
+                    <lb n="2"/> <mod change="#strato-4"><add rend="indent-center">1910</add></mod>
+                    <mod change="#strato-4">
+                        <add place="right"><hi rend="underline">Non ti fermare!</hi></add>
+                    </mod><note n="1">Annotazione vergata a lapis – E</note>
+                    <lb n="3"/><ab rend="align-center"><mod change="strato-1"><add>La mia fanciullezza. 1<mod><subst><add place="superscript">0</add><del rend="overwritten">1</del></subst></mod> e 1<mod><subst><add place="superscript">1</add><del rend="overwritten">2</del></subst></mod> anni.</add></mod></ab>
+                </ab><lb/>
+                <p rend="indent">
+                    <lb n="4"/>Benché la memoria mi presenti chiaramente al pensiero la mia vita bam-
+                    <lb n="5"/>bina, dai
+dai 
+                    <mod change="#strato-1"> 6
+                        <del rend="strikethrough">anni</del>
+                    </mod>
+                    ai nove
+                    <mod change="#strato-1">
+                         <add place="above">anni</add>
+                    </mod>
+                    <!--Se si mantiene il varSeq su lem e rdg, Evt visualizza l'errorre 12121212121212 N.B. Non è una visualizzazione sbagliata, appare soltanto questa striscia di numeri; il codice funziona.-->
+                    <!-- <mod change="strato-1"><del rend="strikethrough">anni</del></mod> 
+                         ai nove <mod change="strato-1"><add place="above">anni</add></mod> 
+                         Questa codifica presenta un problema teorico: separando la cancellazione e la successiva aggiunta della parola "anni" in due mod differenti, si perde il legame tra le due operazioni.
+                         Usare un mod unico con dentro sia del che add è problematico per la visualizzaizone di "ai nove", porzione di testo scritta nello strato-0 ma che deve essere  visualizzata anche nello strato-1.
+                         Scrivere:
+                         dai 6 
+                         <mod change="#strato-1">
+                         <delrend="strikethrough">anni</del> 
+                         ai nove 
+                         <add place="above">anni</add>
+                         </mod> comporta che "ai nove" venga visualizzato solo nello strato-1, mentre deve essere visualizzato anche nello strato-0.
+                         Quindi, per mantenere la coesione del'intervento è necessario usare app.
+                    --><choice resp="editor"><sic>comincierò</sic><corr resp="editor">comincerò</corr></choice>
+                    <mod change="#strato-1"><add place="above">tuttavia</add></mod>
+                    ad esaminare e ad esporre i fatti <lb n="6"/> e i sentimenti 
+                    <subst>
+                        <del rend="strikethrough" change="#strato-1">che costituivano la</del>
+                        <add place="above" change="#strato-1">della</add>
+                    </subst>
+                    
+                    mia età fanciulla, dai 10<lb n="7"/>
+                    ai 15 anni, appunto perché fu in questo periodo che sentii
+                    <mod change="#strato-0">
+                        <subst>
+                            <add seq="3" place="above">primieramente</add>
+                            <del rend="strikethrough" seq="2"><add place="above" seq="1">per prima</add></del></subst>
+                    </mod>
+                    nell’animo <lb n="8"/> la favilla poetica e che
+                    cominciò per me la vera vita, la vera conoscenza del<lb n="9"/> proprio io.</p>
+                <p rend="indent">
+                    <lb n="10"/>Finiti i dieci anni mi parve di esser già grande: questo sentimento<lb n="11"/>che non è raro trovar nei bambini
+                    o che forse tutti hanno era<lb n="12"/>però in me
+                    <subst>
+                        <del rend="strikethrough" change="#strato-1">eccellente per grado d'intensità</del>
+                        <add place="above" change="#strato-1">oltre 
+                            <subst>
+                                <del rend="strikethrough"> l'uso </del>
+                                <add place="above"> modo</add>
+                            </subst> 
+                            accentuato
+                        </add>
+                    </subst>. 
+                    
+                    <del rend="strikethrough" change="#strato-4">
+                        Già cominciavo<lb n="13"/>a veder di mal occhio i maestri, a vedermi già dotto, a ri-<lb n="14"/>tirarmi dagli altri
+                        compagni, di cui non nutriva che disistima<lb n="15"/>o gelosia, a disubbidire a’ genitori, ad aggrottar le ciglia quan-<lb n="16"/>do incontravo la
+                        gente e andarmene <add place="above" change="#strato-0">leggendo</add> a spasso solo <add place="above" change="#strato-0">e </add> con
+                        <subst change="#strato-1">
+                            <add place="above">rado</add>
+                            <del rend="strikethrough">piano</del>
+                        </subst>
+                        passo,
+                        <subst change="#strato-0">
+                            <del rend="strikethrough">legg</del> <add place="inline">ad esigere</add>
+                        </subst> 
+                        la risposta alle mie domande, alle<lb n="18"/>mie scappellate.
+                    </del><note type="critical">La cassatura in lapis, anche se non copre l'intera porzione, è da intendersi totale</note>
+                </p>
+                <p rend="indent"> <lb n="19"/> Frequentavo già la prima ginnasiale privatamente da <lb n="20"/> un caro prete, che <mod change="#strato-0"><subst><add place="above">io ho tenuto</add> <del rend="strikethrough">poi mi è stato</del></subst></mod>
+                    sempre tra le persone più care.<lb n="21"/> Non nego di aver avuto intelligenza, ma neppure di avermi essa <lb n="22"/> procurato e
+                    alimentato nell’animo quel germe di sentimento
+                    
+                </p>
+            </div>
+            <div type="page" xml:id="Quaderno1_1v">
+                <pb n="1v1" facs="1v.jpg"/>
+                <p rend="indent"><mod change="#strato-1"><add place="margin-left"><hi rend="underline">Corrigendo</hi></add></mod></p>
+            </div>
+            <div type="page">
+                <pb  n="2r" facs="2r.jpg" />
+                <fw place="top_right" type="pageNum"><mod change="#strato-1"><add>2</add></mod></fw>
+                <p rend="indent"><lb n="1"/>orgoglioso, che crebbe sempre più col crescere di essa, che divenne un<lb n="2"/> albero robusto e arduo a
+                    sradicarsi quando <mod change="#strato-0"><subst><del rend="strikethrough">intelligen</del> <add place="inline">essa</add></subst></mod> e <lb n="3"/>l’ingegno
+                    
+                    <mod change="#strato-0">
+                        <subst>
+                            <del rend="strikethrough">
+                                fruttificarono qualche 
+                                <add place="above">buon</add> 
+                                frutto
+                            </del>
+                            <add place="inline">generarono</add>
+                        </subst>
+                    </mod>
+                    
+                    <!-- 
+                         <app>
+                         <lem varSeq="3"><mod change="#strato-0"><del rend="strikethrough">fruttificarono qualche <add place="above">buon</add> frutto</del> <add place="inline">generarono</add></mod></lem>
+                         <rdg varSeq="1"><mod change="#strato-0">fruttificarono qualche frutto</mod></rdg>
+                         <rdg varSeq="2"><mod change="#strato-0">fruttificarono qualche <add place="above">buon</add> frutto</mod></rdg>
+                         </app>
+                         <mod change="#strato-0"><subst><del rend="strikethrough" seq="1">fruttificarono qualche <add place="above" seq="2">buon</add> frutto</del>
+                         <add place="inline" seq="2">generarono</add>  
+                         </subst></mod>: così non si visulizzano gli stadi intermedi:è giusto? La cronologia dovrebbe essere: 1)fruttificarono qualche frutto 2)aggiunta di "buon" 3)cassatura e modifica in "generarono". Da capire se è il modo migliore per rappresentare questo tipo di modifiche inetrne a uno strato. Non è incorente con la codifica a 3r? Anche in quel caso, in uno strato (1) sono avvenute correzioni intermedie, soltanto che lì siamo nel <rdg> e quindi, nella visualizzazione, comapre più volte [1]. Forse anche qui si deve aprire un <app>?  E lavorare poi solo sullo strato-0?-->
+                     già <mod change="#strato-0"><add place="above">de'</add></mod> frutti <lb n="4"/>maturi, <mod change="#strato-0"><del rend="strikethrough">e mi</del></mod>
+                    mostraro<mod change="strato-0"><subst> <add place="superscript">ndomi</add> <del rend="overwritten">no</del>
+                        </subst> </mod> 
+                    chi fossi, e mi dettero a sperare gran-<lb n="5"/>demente <mod change="#strato-0"><subst><del rend="strikethrough">su</del> <add place="inline">del</add></subst></mod>
+                    mio avvenire. Questo senso superbo di me stesso<lb n="6"/>mi dava un
+                    carattere piuttosto <mod change="#strato-0"><subst><del rend="strikethrough">di</del> <add place="inline">odioso</add></subst></mod>
+                    di fanciullo pretendente,<lb n="7"/>insubordinato e nello stesso tempo mi toglieva
+                    l’assiduità dello<lb n="8"/>studio, la regolarità nell’apprendere, imparando e scrivendo<lb n="9"/>in fretta e furia e
+                    credendo di far sempre bene e sempre me-<lb n="10"/>glio degli altri. Per questo senso appunto non volevo<lb n="11"/>mai
+                    avere sbagliato, fingevo d’aver saputo quella data<lb n="12"/>regola confessando d’aver errato per distrazione.
+                    «Sca<lb n="12"/>pato sempre, duro mai» ho sempre detto.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
