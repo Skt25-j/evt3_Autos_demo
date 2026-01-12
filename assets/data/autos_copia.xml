@@ -39,6 +39,8 @@
                     <person xml:id="Alfieri">
                         <persName>Vittorio Alfieri</persName>
                     </person>
+                    <person xml:id="Finzi">
+                        <persName>Giuseppe Finzi</persName></person>
                 </listPerson>
             </sourceDesc>
         </fileDesc>
@@ -1485,6 +1487,41 @@
                         <lb n="3"/>
                         <mod change="#strato-2"><subst><del rend="strikethrough">bei</del>
                         <add place="inline">bii</add></subst></mod> e mi detti a sperare un glorioso avvenire.
+                    </mod>
+                </p>
+                <p rend="indent">
+                    <mod change="#strato-2">
+                        <lb n="4"/>Come ho già detto, principiai questo mio lavoro nel novembre del 1905,
+                        <lb n="5"/>quando io camminav
+                        <mod change="#strato-2"><subst><del rend="overwritten">a</del>
+                        <add place="superimposed">o</add></subst></mod> in 13 anni e frequentavo 2 ginna-
+                        <lb n="6"/>siale. Tostochè mi venne in testa di vendicarmi di quella
+                        <lb n="7"/>creduta oppressione 
+                        <mod change="#strato-2"><subst><del rend="strikethrough">com</del>
+                        <add place="inline">scrivendo</add></subst></mod> un’opera che ritraesse simboli-
+                        <lb n="8"/>camente il suo carattere, mi s’affacciò davanti la difficoltà
+                        <lb n="9"/>della forma. La metrica non <mod change="#strato-2">l
+                            <del rend="overwritten" xml:id="del_o">o</del>
+                            <add place="superimposed" xml:id="agg_ap">’</add>avevo mai vist
+                            <del rend="overwritten" xml:id="del_visto">o</del>
+                            <add place="superimposed" xml:id="agg_vista">a</add>
+                        <substJoin target="#del_o #agg-ap"/>
+                        <substJoin target="#del_visto #agg_vista"/>
+                        </mod> e 
+                        <mod change="#strato-2">
+                            <subst><del rend="overwritten">a</del>
+                        <add place="superimposed">i</add></subst></mod> 
+                        <mod change="#strato-2"><subst><del rend="strikethrough">ver</del>
+                        <add place="inline">pochi<lb n="10"/>versi</add></subst></mod>
+                        ch’avevo fatti erano fatti a orecchio. Nell’Antologie avevo
+                        <lb n="11"/>trovato qualche regola metrica, ma non serviva. Un giorno
+                        <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Finzi">Finzi </persName>intitolato “Arte del Di-
+                        <lb n="13"/>re”, ed io ghiotto più che mai mi ricordo d’averlo preso senza
+                        <lb n="14"/>permesso, sicuro che il prefetto un po’ rustico, un po’ tangano
+                        <lb n="15"/>me l’avrebbe negato, e m’avrebbe quel ch’era peggio umiliato dicendo-
+                        <lb n="16"/>mi: «Ancora non è roba pe’ tuoi denti». 
+                        
+
                     </mod>
                 </p>
             </div>
