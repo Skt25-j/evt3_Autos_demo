@@ -1476,7 +1476,17 @@
             </div>
             <div type="page">
                 <pb n="18v1" facs="18v.jpg"/>
-                <!-- strato 2-->
+                <fw place="top_right" type="pageNum"><mod change="#strato-4"><add>20</add></mod></fw>
+                <p rend="indent">
+                    <mod change="#strato-2">
+                        <lb n="1"/>Più volte <mod change="#strato-2">
+                            <del rend="strikethrough">ri</del></mod>mutai l’intreccio, più volte mi trovai accasciato e
+                        <lb n="2"/>quasi pronto a strappare tutti quei fogli; più volte m’insuper-
+                        <lb n="3"/>
+                        <mod change="#strato-2"><subst><del rend="strikethrough">bei</del>
+                        <add place="inline">bii</add></subst></mod> e mi detti a sperare un glorioso avvenire.
+                    </mod>
+                </p>
             </div>
             <div type="page">
                 <pb n="19r1" facs="19r.jpg"/>
