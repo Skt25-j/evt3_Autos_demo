@@ -1447,10 +1447,10 @@
                         <l n="4">che tu benigno adori, in te la mano</l>
                         <l n="5">onnipotente stese e di sublimi</l>
                         <l n="6">virtudi adorno ti donò <app>
-                                    <lem varSeq="2"><mod change="#strato-4">
+                                    <lem><mod change="#strato-4">
                                             <del rend="strikethrough">uno</del>
                                             <add place="above">lo</add></mod></lem>
-                                <rdg varSeq="1"><mod change="#strato-1">uno</mod></rdg>    
+                                <rdg><mod change="#strato-1">uno</mod></rdg>    
                                 </app> spirto.</l>
                         <l n="7">Ne l’alma tu
                                 <mod change="#strato-1"><subst><del rend="overwritten">r</del>
@@ -1471,7 +1471,7 @@
                         <l n="16">ti guarda Dio com’<mod change="#strato-1"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del>
                                 <add place="superimposed">uom</add></subst></mod> la sua pupilla.</l>
                         <l n="17">Grande ti fè l’onnipotente mano</l></lg>
-                    </mod> prova
+                    </mod> <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
                 </ab>
             </div>
             <div type="page">
