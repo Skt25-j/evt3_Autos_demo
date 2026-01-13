@@ -31,41 +31,41 @@
   "downloadableXMLSource": false,
   "namedEntitiesLists": {
     "persons": {
-			"defaultLabel": "Persons",
-			"enable": true,
-			"listSelector": "listPerson",
-			"namedEntityType": "person"
-		},
-		"places": {
-			"enable": true,
-			"defaultLabel": "Places",
-			"listSelector": "listPlace",
-			"namedEntityType": "place"
-		},
-		"organizations": {
-			"enable": true,
-			"defaultLabel": "Organizations",
-			"listSelector": "listOrg",
-			"namedEntityType": "org"
-		},
-		"relations": {
-			"enable": true,
-			"defaultLabel": "Relations",
-			"listSelector": "listRelation",
-			"namedEntityType": "relation"
-		},
-		"events": {
-			"enable": true,
-			"defaultLabel": "Events",
-			"listSelector": "listEvent",
-			"namedEntityType": "event"
-		},
-		"entries": {
-			"enable": true,
-			"defaultLabel": "Entries",
-			"listSelector": "div[type='glossary']",
-			"namedEntityType": "entry"
-		}
+      "defaultLabel": "Persons",
+      "enable": true,
+      "listSelector": "listPerson",
+      "namedEntityType": "person"
+    },
+    "places": {
+      "enable": true,
+      "defaultLabel": "Places",
+      "listSelector": "listPlace",
+      "namedEntityType": "place"
+    },
+    "organizations": {
+      "enable": true,
+      "defaultLabel": "Organizations",
+      "listSelector": "listOrg",
+      "namedEntityType": "org"
+    },
+    "relations": {
+      "enable": true,
+      "defaultLabel": "Relations",
+      "listSelector": "listRelation",
+      "namedEntityType": "relation"
+    },
+    "events": {
+      "enable": true,
+      "defaultLabel": "Events",
+      "listSelector": "listEvent",
+      "namedEntityType": "event"
+    },
+    "entries": {
+      "enable": true,
+      "defaultLabel": "Opere",
+      "listSelector": "listBibl",
+      "namedEntityType": "bibl"
+    }
   },
   "showLists": true,
   "entitiesSelectItems": [
@@ -109,8 +109,8 @@
           "enable": true
         },
         {
-          "value": "div[type='glossary']",
-          "label": "entries",
+          "value": "title",
+          "label": "Opere",
           "color": "#ce93d8",
           "enable": true
         }
@@ -148,7 +148,8 @@
     "biblAttributeToMatch": "xml:id",
     "elementAttributesToMatch": [
       "target",
-      "source"
+      "source",
+      "ref"
     ]
   },
   "biblView": {
@@ -160,7 +161,8 @@
       "publisher",
       "pubPlace",
       "citedRange",
-      "biblScope"
+      "biblScope",
+      "note"
     ],
     "showAttrNames": false,
     "showEmptyValues": false,
@@ -182,24 +184,24 @@
   "startingFromDefinitiveLayer": false,
   "showChangeLayerMarkerInText": true,
   "changeSequenceView": {
-    "showVarSeqAttr": true,
+    "showVarSeqAttr": false,
     "showSeqAttr": false,
     "layerColors": {
-  "strato-0": "#E67E22",
-  "strato-1": "#D35400",
-  "strato-2": "#E91E63",
-  "strato-3": "#C2185B",
-  "strato-4": "#9E9B9B",
-  "strato-5": "#9C27B0",
-  "strato-6": "#7B1FA2",
-  "strato-7": "#512DA8",
-  "strato-8": "#4C4A4A",
-  "strato-9": "#2404B5",
-  "strato-10": "#BB1515",
-  "strato-11": "#080277",
-  "strato-X": "#0097A7",
-  "strato-Y": "#00796B"
-}
+      "strato-0": "#E67E22",
+      "strato-1": "#D35400",
+      "strato-2": "#E91E63",
+      "strato-3": "#C2185B",
+      "strato-4": "#9E9B9B",
+      "strato-5": "#9C27B0",
+      "strato-6": "#7B1FA2",
+      "strato-7": "#512DA8",
+      "strato-8": "#4C4A4A",
+      "strato-9": "#2404B5",
+      "strato-10": "#BB1515",
+      "strato-11": "#080277",
+      "strato-X": "#0097A7",
+      "strato-Y": "#00796B"
+    }
   },
   "defaultImageZoomLevel": 0.7,
   "maxImageZoomLevel": 2,

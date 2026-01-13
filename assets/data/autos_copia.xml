@@ -38,10 +38,42 @@
                 <listPerson>
                     <person xml:id="Alfieri">
                         <persName>Vittorio Alfieri</persName>
+                        <note>
+                            <p>Asti, 1749 – Firenze, 1803. Celebre drammaturgo, poeta e scrittore italiano, 
+                                massimo esponente del tragico nel Settecento.</p>
+                        </note>
                     </person>
                     <person xml:id="Finzi">
-                        <persName>Giuseppe Finzi</persName></person>
+                        <persName>Giuseppe Finzi</persName>
+                        <note>
+                            <p>Autore di testi scolastici</p>
+                        </note>
+                    </person>
+                    <person xml:id="Anna_Riedi">
+                        <persName>Anna Riendi</persName>
+                        <note>
+                            <p>Madre di Stefano Tuscano, proviene da una famiglia benestante caduta in miseria, per via dei debiti di gioco del padre; trova impiego presso la Fattoria dell'Amorosa di Sinalunga</p>
+                        </note>
+                    </person>
+                    <person xml:id="Foscolo">
+                        <persName>
+                            Ugo Foscolo
+                        </persName>
+                        <note>
+                            <p>1778 – 1827. Poeta, scrittore e patriota italiano di origine greca, esponente del neoclassicismo e del preromanticismo.</p></note>
+                    </person>
                 </listPerson>
+                <listRelation>
+                    <relation name="madre" active="#Anna_Riedi" passive="#Stefano_Tuscano" />
+                </listRelation>
+                <listBibl xml:id="Opere_citate">
+                    <head>Opere citate</head>
+                    <bibl xml:id="OdePallavicini"> 
+                        <author>Ugo Foscolo</author>
+                        <title level="a">Ode a Luigia Pallavicini</title>
+                        <date>1800</date>
+                    </bibl>
+                </listBibl>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -198,7 +230,7 @@
                             <mod change="#strato-0">6 anni ai nove</mod>
                         </rdg>
                     </app>
-
+                    
                     <!--Se si mantiene il varSeq su lem e rdg, Evt visualizza l'errorre 12121212121212 N.B. Non è una visualizzazione sbagliata, appare soltanto questa striscia di numeri; il codice funziona.-->
                     <!-- <mod change="#strato-1"><del rend="strikethrough">anni</del></mod> 
                          ai nove <mod change="#strato-1"><add place="above">anni</add></mod> 
@@ -233,7 +265,7 @@
                             <mod change="#strato-0">che costituivano la</mod>
                         </rdg>
                     </app> <!-- App perchè strati diversi
-                    
+                         
                          <mod change="#strato-1"><subst><del>che costituivano la</del>
                          <add>della</add></subst></mod> una codifica del genere, fa sparire "che costituivano la" nello strato-0;
                          L'altra possibilità, annidare due mod, non è praticabile perchè serve anche un subst e mod dentro subst non ci può stare
@@ -251,10 +283,13 @@
                 <p rend="indent">
                     <lb n="10"/>Finiti i dieci anni mi parve di esser già grande: questo sentimento<lb n="11"/>che non è raro trovar nei bambini
                     o che forse tutti hanno era<lb n="12"/>però in me
-                    <app><lem varSeq="2"><mod change="#strato-1"><del rend="strikethrough">eccellente per grado d'intensità</del><add place="above">oltre
-                                    <subst>
-                                        <del rend="strikethrough"> l'uso </del>
-                                        <add place="above"> modo</add></subst> accentuato</add></mod></lem>
+                    <app><lem varSeq="2"><mod change="#strato-1">
+                                <subst>
+                                    <del rend="strikethrough">eccellente per grado d'intensità</del>
+                                    <add place="above">oltre
+                                        <subst>
+                                            <del rend="strikethrough"> l'uso </del>
+                                            <add place="above"> modo</add></subst> accentuato</add></subst></mod></lem>
                         <rdg varSeq="1"><mod change="#strato-0">eccellente per grado d'intensità</mod></rdg>  
                     </app>. 
                     
@@ -430,7 +465,7 @@
                     mi consolò <lb n="16"/>ineffabilmente, la paura 
                     <mod change="#strato-0">
                         <del rend="strikethrough">s</del>cessò</mod>, non vidi, non sentii più nulla.<lb n="17"/>
-                    La mattina non raccontai nulla alla mamma, che mi venne <lb n="18"/>a destare; per non parer pusillanime e
+                    La mattina non raccontai nulla alla <persName ref="Anna_Riedi">mamma</persName>, che mi venne <lb n="18"/>a destare; per non parer pusillanime e
                     <mod change="#strato-0">
                         <del rend="strikethrough">d</del></mod>
                     cader dalla stima<lb n="18"/> di ragazzo coraggioso o meglio di uomo già serio e esperiente.</p>
@@ -458,7 +493,7 @@
                     </mod>ri, <mod change="#strato-0">
                         <del><gap quantity="2"  unit="char"/></del>
                     </mod>tenendo
-                    <lb n="3"/>per esempio l’Ode del Foscolo a Luigia Pallavicini,<note n="1" type="critical" resp="#ST">Nota di spiegazione sull'Ode di Foscolo; magari link al testo</note>
+                    <lb n="3"/>per esempio l’<title><ref target="#OdePallavicini">Ode</ref></title> del <persName ref="#Foscolo">Foscolo</persName> a Luigia Pallavicini,<note n="1" type="critical" resp="#ST">Nota di spiegazione sull'Ode di Foscolo; magari link al testo</note>
                     <lb n="4"/>trovata in un librettino<mod change="#strato-0">
                         <del rend="strikethrough">tutto</del>
                     </mod>che credo avrebbe
@@ -621,7 +656,7 @@
                     <mod change="#strato-0"><add place="above">Quando ci penso</add> <subst>
                             <del rend="overwritten">M</del>
                             <add place="superimposed">m</add></subst>i</mod>
-                    <lb n="7"/>sembra di risentire nell’animo quella stizza ch’io allora provava
+                    <lb n="7"/>sembra di risentire nell’animo quella stizza ch’io allora provavo
                     <lb n="8"/>nel non sapere <mod change="#strato-0">
                         <del rend="strikethrough">declinare</del>
                     </mod> <!-- Meglio?: <mod change="#strato-0">
@@ -766,7 +801,7 @@
                 <p rend="indent">
                     <lb n="1"/>Verso l’aprile dell’anno 1904 mi ricordo di aver fatto un sonetto 
                     <lb n="2"/>alla <mod change="#strato-0"> <subst><del rend="strikethrough">val</del><add place="inline">mia valle</add></subst>
-                    </mod> d’Orcia, il quale <mod change="#strarto-0">
+                    </mod> d’Orcia, il quale <mod change="#strato-0">
                         <subst><del rend="strikethrough">non potè</del>
                             <add place="inline">andò</add></subst></mod> sperso 
                     <app><lem varSeq="4"><mod change="#strato-1"><add place="above">e del quale <del rend="strikethrough">ho</del>or ultimamente</add>non 
@@ -960,7 +995,7 @@
                     <mod change="#strato-0"><del rend="strikethrough">in me</del></mod>
                     <lb n="9"/>la mia scapataggine, per la quale presso i maestri,
                     <lb n="10"/>
-                    <mod change="#strato-0"><subst><del rend="overwritten" >a</del>
+                    <mod change="#strato-0"><subst><del rend="overwritten">a</del>
                             <add place="superimposed">e</add></subst></mod> i superiori persi la stima 
                     <mod change="#strato-0"><subst><del rend="overwritten"><gap quantity="1" unit="char"/></del>
                             <add place="superimposed">di</add></subst></mod> testa ferma e intelligente.
@@ -1108,13 +1143,14 @@
                         L’autore stabilisce l’ordine definitivo delle parole inserendo apici numerici in interlinea superiore.   
                     </note>
                     <lb n="18"/>perseguitato; mi parve tutta <mod change="#strato-0">
-                        <del rend="strikethrough">la</del></mod>spine la vita
+                        <del rend="strikethrough">la</del>spine la vita
                     <lb n="19"/>
                     <mod change="#strato-0"><subst><del rend="strikethrough">convittrice</del>
                             <add place="inline">di collegio</add></subst></mod>, cantai in cuore mio alla libertà
                     <lb n="20"/><app><lem varSeq="2"><mod change="#strato-9"><hi rend="underline"> e doventai un anarchico ridotto a’ minimi termini.</hi></mod></lem>
                         <rdg varSeq="1"><mod change="#strato-0"> e doventai un anarchico ridotto a’ minimi termini.</mod></rdg>    
                     </app>
+                    </mod>
                 </p>
             </div>
             <div type="page">
@@ -1183,7 +1219,7 @@
                 <fw place="top_right" type="pageNum"><mod change="#strato-1"><add>16</add></mod></fw>
                 <p rend="indent"><lb n="1"/>più buoni e assennati, 
                     <mod change="#strato-0"><subst><del rend="strikethrough">mi fomentò</del>
-                    <add place="inline">mi fomentò </add></subst></mod> <note n="1" resp="ST" type="critical">Lezione rispristinata</note>l’invi-
+                            <add place="inline">mi fomentò </add></subst></mod> <note n="1" resp="ST" type="critical">Lezione rispristinata</note>l’invi-
                     <lb n="2"/>dia e l’ira contro taluno di questi, che venne così per
                     <lb n="3"/>rimbalzo a <mod change="#strato-0">
                         <del rend="strikethrough">ve</del></mod> non veder di buon occhio né me, né quello
@@ -1191,28 +1227,28 @@
                     <lb n="5"/>rai le carezze della mamma, spesso mi pentii d’aver
                     <lb n="6"/>
                     <mod change="#strato-0"><subst><del rend="strikethrough">preso</del>
-                    <add place="inline">vestito</add></subst></mod> quell’abito, o meglio d’essermi messi sotto
+                            <add place="inline">vestito</add></subst></mod> quell’abito, o meglio d’essermi messi sotto
                     <lb n="7"/>la regola e la disciplina.</p>
                 <p rend="indent">
                     <lb n="8"/>Tra queste angustie interne (a cui rispondeva anche 
                     <mod change="#strato-0"><subst><del rend="strikethrough">una</del>
-                    <add place="above">la mia</add></subst></mod>
+                            <add place="above">la mia</add></subst></mod>
                     <lb n="9"/>cella angusta e squallida) passai il primo anno scolastico,
                     <lb n="10"/>imparando da me molto italiano e 
                     <mod change="#strato-1"><add place="above">da’ maestri</add></mod><note n="2" resp="ST">Lezione cerchiata con il lapis - E</note>
                     <app>
-                       <lem varSeq="2"> <mod change="#strato-4"><hi rend="underline">poco</hi></mod></lem>
-                    <rdg varSeq="1"><mod change="#strato-0">poco</mod></rdg>    
+                        <lem varSeq="2"> <mod change="#strato-4"><hi rend="underline">poco</hi></mod></lem>
+                        <rdg varSeq="1"><mod change="#strato-0">poco</mod></rdg>    
                     </app> latino; con poca
                     <lb n="11"/>voglia e tempo di attendere a uno studio regolare.
                     <lb n="12"/>Però trovai un rifugio ne’ miei dolori d
                     <mod change="#strato-0"><subst><del rend="overwritten">i</del>
-                    <add place="superimposed">a</add></subst></mod> fanciullo.
+                            <add place="superimposed">a</add></subst></mod> fanciullo.
                     <lb n="13"/>
                     <mod change="#strato-0">
                         <add place="above" seq="1">Nel maggio di quell’anno 1905</add> 
-                    <subst seq="1"><del rend="overwritten">M</del>
-                    <add place="superimposed">m</add></subst></mod>i capitò tra mano l’Antologia che 
+                        <subst seq="1"><del rend="overwritten">M</del>
+                            <add place="superimposed">m</add></subst></mod>i capitò tra mano l’Antologia che 
                     <mod change="#strato-0">
                         <add place="above">allora</add>
                     </mod> si usava a 2<hi rend="apice">a</hi> e 3<hi rend="apice">a</hi>
@@ -1226,7 +1262,7 @@
                     <app>
                         <lem varSeq="3"><mod change="#strato-9">
                                 <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#ST">bellino</unclear></del>
-                        </mod></lem>
+                            </mod></lem>
                         <rdg varSeq="2"><mod change="#strato-4">
                                 <del rend="strikethrough">di <unclear reason="cancellatura" cert="high" resp="#ST">bellino</unclear></del>
                             </mod></rdg>
@@ -1235,7 +1271,7 @@
                     che s’addiceva e accor-
                     <lb n="19"/>dava con l’interno dell’animo mio infierito e 
                     <mod change="#strato-0"><subst><del rend="strikethrough">cercante</del>
-                    <add place="above">anelante</add></subst></mod>
+                            <add place="above">anelante</add></subst></mod>
                     <lb n="20"/>pace. <mod change="#strato-0"><del rend="strikethrough">Tor</del></mod>
                 </p>
             </div>
@@ -1255,16 +1291,16 @@
                                                 <add place="above">la</add>
                                             </subst></del> frucai in tutte 
                                         <subst seq="1"><del rend="strikethrough">le librerie</del>  
-                                         <add place="inline">casse di libri vecchi </add>
+                                            <add place="inline">casse di libri vecchi </add>
                                         </subst>
                                     </del>
-                    <add place="inline">ebbi la fortuna</add>
+                                    <add place="inline">ebbi la fortuna</add>
                                 </subst></del> 
                             
-                    <add place="inline"><del rend="strikethrough" seq="5">mia </del>
+                            <add place="inline"><del rend="strikethrough" seq="5">mia </del>
                                 <lb n="2"/><add place="above" seq="6">
                                     la mia cara</add> mamma</add></subst>
-                            
+                        
                     </mod> <note n="1" resp="#ST" type="critical">
                         La catena correttoria vede diversi stadi intermedi, prima dell’approdo all’ultima lezione:
                         inizialmente Tuscano decide per «non frucai tutte le librerie», poi corretta in «non frucai tutte le casse di libri vecchi»,
@@ -1275,7 +1311,7 @@
                         per maggiore chiarezza, l’intero sintagma «la mia cara». 
                     </note>
                     
-                     mi mise in mano un librettino scollegato,
+                    mi mise in mano un librettino scollegato,
                     <lb n="3"/>che conteneva 4 tragedie dell’<persName ref="#Alfieri">Alfieri</persName>. 
                     
                     <mod change="#strato-0" >
@@ -1293,56 +1329,57 @@
                     <lb n="5"/>Delle quattro tragedie, Maria Stuarda, Mirra, Merope,
                     <lb n="6"/>Congiura de’ Pazzi, 
                     <mod change="#strato-0"><subst><del rend="strikethrough">mi piacque</del>
-                    <add place="inline">preferii </add></subst></mod>Mirra e
+                            <add place="inline">preferii </add></subst></mod>Mirra e
                     <lb n="7"/>su quella il 
                     <mod change="#strato-0"><subst><del rend="strikethrough">prossi</del>
-                    <add place="inline">venturo</add></subst></mod> novembre <mod change="#strato-0">
+                            <add place="inline">venturo</add></subst></mod> novembre <mod change="#strato-0">
                         <add place="above">già tornato in Seminario</add></mod> architettai
                     <mod change="#strato-0"><del rend="strikethrough">
-                        <add place="above">e composi</add>
-                    </del></mod>
+                            <add place="above">e composi</add>
+                        </del></mod>
                     <lb n="8"/>una tragedia.
                     <mod change="#strato-0">
-                        <del rend="strikethrough"><gap unit="char" quantity="2"/></del></mod>
+                        <del rend="strikethrough"><gap unit="char" quantity="2"/></del>
+                    </mod>
                     Vi persi
                     <mod change="#strato-0"><subst><del rend="strikethrough">tre</del>
-                    <add place="above">quasi due</add></subst></mod> anni, dal novembre 1905
+                            <add place="above">quasi due</add></subst></mod> anni, dal novembre 1905
                     <lb n="9"/>al giugno 1907; l
                     <mod change="#strato-0"><subst><del rend="strikethrough">a feci</del>
-                    <add place="above">’incominciai</add> </subst></mod>tre volte arrivando fin al terzo
+                            <add place="above">’incominciai</add> </subst></mod>tre volte arrivando fin al terzo
                     <lb n="10"/>atto; ora non 
                     <mod change="#strato-0"><del rend="strikethrough">mi</del></mod>
                     ho potuto ritrovare che 
                     <lb n="11"/>
                     <mod change="#strato-0">
                         <subst seq="3"><del rend="strikethrough"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">due</del>
-                    <add place="inline">il primo<lb/></add></subst></del>
-                    <add place="inline">uno</add></subst></del>
-                    <add place="inline">quattro</add></subst></mod> atti; 
+                                            <add place="inline">il primo<lb/></add></subst></del>
+                                    <add place="inline">uno</add></subst></del>
+                            <add place="inline">quattro</add></subst></mod> atti; 
                     <mod change="#strato-0">
                         <subst seq="1"><del rend="strikethrough">col primo ripetuto due v</del>
-                    <add place="above">con due copie diverse del primo <del rend="strikethrough" seq="2">e variato</del></add></subst></mod>.
+                            <add place="above">con due copie diverse del primo <del rend="strikethrough" seq="2">e variato</del></add></subst></mod>.
                     <lb n="12"/>(La feci certo come la poteva fare <choice>
                         <sic>un'ingegno</sic>
                         <corr resp="#ST">un ingegno</corr></choice> di 
                     <mod change="#strato-0"><add place="inline">12 e</add> 1
-                    <subst><del rend="overwritten">2</del>
-                    <add place="superimposed">3</add></subst></mod> anni.) 
+                        <subst><del rend="overwritten">2</del>
+                            <add place="superimposed">3</add></subst></mod> anni.) 
                     <lb n="13"/>
                     <mod change="#strato-0"><subst seq="2"><del rend="strikethrough"><subst seq="1"><del rend="strikethrough">I nomi erano moderni I nomi erano moderni </del>
-                    <add place="inline">Il titolo</add></subst></del>
-                    <add place="inline"><lb n="14"/>Questa tragedia</add></subst></mod> nella mia intenzione doveva essere
+                                    <add place="inline">Il titolo</add></subst></del>
+                            <add place="inline"><lb n="14"/>Questa tragedia</add></subst></mod> nella mia intenzione doveva essere
                     allegorica
                     <app> <lem>
-                             <mod change="#strato-4">
-                             <add place="above">alla mia vita d'allora</add>
-                             e <subst><del rend="strikethrough">ogni</del>
-                             <add rend="above">i</add></subst>
-                             personaggi<del rend="strikethrough">o</del> <subst><del rend="strikethrough">avere il suo simbolo </del>
-                             <add place="inline"> <lb n="15"/>alludere 
-                             <subst><del rend="strikethrough">a' miei</del>
-                             <add place="inline">a me</add></subst></add></subst>  
-                             </mod></lem> <!-- Forse è meglio isolare solo il cambiamento? e mettere solo il subst che riguarda il passaggio da "ogni personaggio" a "i personaggi" nello strato-4?
+                            <mod change="#strato-4">
+                                <add place="above">alla mia vita d'allora</add>
+                                e <subst><del rend="strikethrough">ogni</del>
+                                    <add rend="above">i</add></subst>
+                                personaggi<del rend="strikethrough">o</del> <subst><del rend="strikethrough">avere il suo simbolo </del>
+                                    <add place="inline"> <lb n="15"/>alludere 
+                                        <subst><del rend="strikethrough">a' miei</del>
+                                            <add place="inline">a me</add></subst></add></subst>  
+                            </mod></lem> <!-- Forse è meglio isolare solo il cambiamento? e mettere solo il subst che riguarda il passaggio da "ogni personaggio" a "i personaggi" nello strato-4?
                              Così?
                              <lem>
                              <mod change="#strato-4">
@@ -1363,23 +1400,23 @@
                              <add place="inline">a me</add></subst></add></subst>  
                              </mod></lem>
                         -->
-                    <rdg><mod change="#strato-0"><add place="above" seq="1">alla mia vita d'allora</add>
-                     e ogni personaggio <subst seq="2"><del rend="strikethrough">avere il suo simbolo </del>
-                    <add place="inline"> <lb n="15"/>alludere 
-                        <subst seq="2"><del rend="strikethrough">a' miei</del>
-                        <add place="inline">a me</add></subst></add></subst>
-                    </mod></rdg> </app> e a’ miei circostanti. Il titolo
+                        <rdg><mod change="#strato-0"><add place="above" seq="1">alla mia vita d'allora</add>
+                                e ogni personaggio <subst seq="2"><del rend="strikethrough">avere il suo simbolo </del>
+                                    <add place="inline"> <lb n="15"/>alludere 
+                                        <subst seq="2"><del rend="strikethrough">a' miei</del>
+                                            <add place="inline">a me</add></subst></add></subst>
+                            </mod></rdg> </app> e a’ miei circostanti. Il titolo
                     <lb n="16"/>
                     <mod change="#strato-0"><subst><del rend="strikethrough">era</del>
-                    <add place="inline">fu</add></subst></mod> prima il Trionfo dell’Innocenza, quindi Daniello
+                            <add place="inline">fu</add></subst></mod> prima il Trionfo dell’Innocenza, quindi Daniello
                     <lb n="17"/>
                     <mod change="#strato-0"><subst><del rend="strikethrough">nella f</del>
-                    <add place="above">(profeta nelle fosse di leoni)</add></subst></mod>. Il tema era storico e io 
+                            <add place="above">(profeta nelle fosse di leoni)</add></subst></mod>. Il tema era storico e io 
                     <mod change="#strato-0"><subst><del rend="strikethrough">l'</del>
-                    <add place="above">n’</add></subst></mod>avevo letto <mod change="#strato-0"><add place="above">uno squarcio</add></mod> in un foglio
+                            <add place="above">n’</add></subst></mod>avevo letto <mod change="#strato-0"><add place="above">uno squarcio</add></mod> in un foglio
                     <lb n="18"/>sperso della Bibbia, e nella mia piccola Storia 
                     <mod change="#strato-0"><subst><del rend="strikethrough">Sto</del>
-                    <add place="inline">Sacra</add></subst></mod>.
+                            <add place="inline">Sacra</add></subst></mod>.
                 </p>
             </div>
             <div type="page">
@@ -1392,7 +1429,7 @@
                     <lb n="3"/>la scena si svolgeva ora nella reggia, ora presso la
                     <lb n="4"/>fossa; l’intreccio era ben fatto e anche troppo
                     <mod change="#strato-0"><subst><del rend="strikethrough">sforzesc</del> 
-                    <lb n="5"/><add place="inline">difficile</add></subst></mod> e complicato; il fatto era storico con aggiun
+                            <lb n="5"/><add place="inline">difficile</add></subst></mod> e complicato; il fatto era storico con aggiun
                     <lb n="6"/>ta d’invenzioni e di ornamenti arbitrarii, che io
                     <lb n="7"/>non starò a descrivere per la poca importanza che
                     <lb n="8"/>hanno e per non essere noioso a chi ha la bontà
@@ -1403,31 +1440,31 @@
                     <lb n="12"/>luce viva che vi si trova abbassato dall’inesperienza,
                     <lb n="13"/>per mostrare quello che dava a bene sperare sul
                     <lb n="14"/>mio avvenire, <app><lem><mod change="#strato-1"><retrace>su la mia</retrace></mod></lem>
-                    <rdg><mod change="#strato-0">su la mia</mod></rdg>    
+                        <rdg><mod change="#strato-0">su la mia</mod></rdg>    
                     </app><note n="1" resp="#ST" type="critical">Sintagma ripassato con la penna - B dello strato-1. Da questo momento Tuscano scrive solo con la penna - B.</note> vita.
                 </p>
                 <p rend="indent">
                     <mod change="#strato-1">
                         <lb n="15"/><mod change="#strato-1"><subst><del rend="strikethrough"> <!-- Ora che è iniziato lo strato-1 è mod change="strato-1" che va sempre messo all'inizio del paragrafo, si deve comunque ripetere il mod anche rispetto alle modifiche circostritte perchè altrimenti non si isola la lezione interessata da variante-->
-                        <subst seq="2"><del rend="overwritten">I</del>
-                        <add place="superimposed">De</add></subst>l primo atto
-                        <subst seq="2"><del rend="strikethrough">era fatto due</del>
-                        <add place="above">ne conservo</add></subst>
-                        volte quasi sempre conform
-                        <subst seq="1"><del rend="strikethrough"><subst><del rend="overwritten">e</del>
-                            <add place="superimposed">i</add></subst>
-                            e il principio una volta cominciava con la prima scena ripetuta più volte e sempre diversamente</del>
-                        <add place="below"> e <subst seq="2"><del rend="overwritten">i</del>
-                        <add place="superimposed">de</add></subst>l principio <del rend="strikethrough" seq="2">ha</del> tre o quattro 
-                                <subst seq="2">
-                                    <del rend="strikethrough">forme</del>
-                            <add place="inline">copie diverse</add> </subst>   
-                            </add></subst>
-                        . <lb/> Il primo verso ora ritrovo </del>
-                        <add place="above">I primi versi della prima <add place="above">e seconda</add> edizione andarono spersi insieme
-                        <lb n="16"/>a 
-                                <subst><del rend="strikethrough">quat</del>
-                                <add place="above">tutti</add></subst> 3 atti; tantoché non mi rimangono</add> </subst></mod>che la terza copia di 4 atti
+                                    <subst seq="2"><del rend="overwritten">I</del>
+                                        <add place="superimposed">De</add></subst>l primo atto
+                                    <subst seq="2"><del rend="strikethrough">era fatto due</del>
+                                        <add place="above">ne conservo</add></subst>
+                                    volte quasi sempre conform
+                                    <subst seq="1"><del rend="strikethrough"><subst><del rend="overwritten">e</del>
+                                                <add place="superimposed">i</add></subst>
+                                            e il principio una volta cominciava con la prima scena ripetuta più volte e sempre diversamente</del>
+                                        <add place="below"> e <subst seq="2"><del rend="overwritten">i</del>
+                                                <add place="superimposed">de</add></subst>l principio <del rend="strikethrough" seq="2">ha</del> tre o quattro 
+                                            <subst seq="2">
+                                                <del rend="strikethrough">forme</del>
+                                                <add place="inline">copie diverse</add> </subst>   
+                                        </add></subst>
+                                    . <lb/> Il primo verso ora ritrovo </del>
+                                <add place="above">I primi versi della prima <add place="above">e seconda</add> edizione andarono spersi insieme
+                                    <lb n="16"/>a 
+                                    <subst><del rend="strikethrough">quat</del>
+                                        <add place="above">tutti</add></subst> 3 atti; tantoché non mi rimangono</add> </subst></mod>che la terza copia di 4 atti
                         <lb n="17"/>e del primo atto ripetuto.
                     </mod>
                 </p>
@@ -1441,38 +1478,38 @@
                     <mod change="#strato-1">
                         <lb n="1"/>I principii erano molteplici e 
                         <mod change="#strato-1"><subst><del rend="overwritten">r</del>
-                        <add place="superimposed">v</add></subst></mod>ari; uno dei quali era questo:
+                                <add place="superimposed">v</add></subst></mod>ari; uno dei quali era questo:
                         <lb n="2"/>Dario:<lg n="1">
-                        <l n="1">Sorgi, Daniele; la fortuna arride</l>
-                        <l n="2">a te benigna;</l>
-                        <l n="3">e dal suo trono eccelso il divo nume</l>
-                        <l n="4">che tu benigno adori, in te la mano</l>
-                        <l n="5">onnipotente stese e di sublimi</l>
-                        <l n="6">virtudi adorno ti donò <app>
+                            <l n="1">Sorgi, Daniele; la fortuna arride</l>
+                            <l n="2">a te benigna;</l>
+                            <l n="3">e dal suo trono eccelso il divo nume</l>
+                            <l n="4">che tu benigno adori, in te la mano</l>
+                            <l n="5">onnipotente stese e di sublimi</l>
+                            <l n="6">virtudi adorno ti donò <app>
                                     <lem><mod change="#strato-4">
                                             <del rend="strikethrough">uno</del>
                                             <add place="above">lo</add></mod></lem>
-                                <rdg><mod change="#strato-1">uno</mod></rdg>    
+                                    <rdg><mod change="#strato-1">uno</mod></rdg>    
                                 </app> spirto.</l>
-                        <l n="7">Ne l’alma tu
+                            <l n="7">Ne l’alma tu
                                 <mod change="#strato-1"><subst><del rend="overwritten">r</del>
-                                <add place="superimposed">a</add> </subst></mod>più fulgida degli altri</l>
-                        <l n="8">si compiace l’Eterno e a te un sorriso</l>
-                        <l n="9">d
+                                        <add place="superimposed">a</add> </subst></mod>più fulgida degli altri</l>
+                            <l n="8">si compiace l’Eterno e a te un sorriso</l>
+                            <l n="9">d
                                 <mod change="#strato-1"><subst><del rend="overwritten">ono</del>
-                                <add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg>
-
+                                        <add place="superimposed">egna</add></subst></mod> mandar dall’alto.</l></lg>
+                        
                         <lb n="10"/>un altro era questo: 
                         <lb n="11"/>Dario: <lg><l n="10">Sorgi, o sorriso degli eterni labbri,</l>
-                        <l n="11">sorgi, Daniele; la fortuna arride</l>
-                        <l n="12">a te benigna; e già mi par che lieta</l>
-                        <l n="13">con dive mani un regio serto al crine</l>
-                        <l n="14">per la mia morte inviolat<mod change="#strato-1"><subst><del rend="overwritten">a</del>
-                                <add place="superimposed">o</add></subst></mod> ponga.</l>
-                        <l n="15">Da’ vasti campi degli eccelsi cieli</l>
-                        <l n="16">ti guarda Dio com’<mod change="#strato-1"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del>
-                                <add place="superimposed">uom</add></subst></mod> la sua pupilla.</l>
-                        <l n="17">Grande ti fè l’onnipotente mano</l></lg>
+                            <l n="11">sorgi, Daniele; la fortuna arride</l>
+                            <l n="12">a te benigna; e già mi par che lieta</l>
+                            <l n="13">con dive mani un regio serto al crine</l>
+                            <l n="14">per la mia morte inviolat<mod change="#strato-1"><subst><del rend="overwritten">a</del>
+                                        <add place="superimposed">o</add></subst></mod> ponga.</l>
+                            <l n="15">Da’ vasti campi degli eccelsi cieli</l>
+                            <l n="16">ti guarda Dio com’<mod change="#strato-1"><subst><del rend="overwritten"><gap unit="char" quantity="3"/></del>
+                                        <add place="superimposed">uom</add></subst></mod> la sua pupilla.</l>
+                            <l n="17">Grande ti fè l’onnipotente mano</l></lg>
                     </mod> <!-- é il varSeq che fa nascere i problemi legati allo 12121 nella visualizzazione della sequenza delle correzioni-->
                 </ab>
             </div>
@@ -1486,7 +1523,7 @@
                         <lb n="2"/>quasi pronto a strappare tutti quei fogli; più volte m’insuper-
                         <lb n="3"/>
                         <mod change="#strato-2"><subst><del rend="strikethrough">bei</del>
-                        <add place="inline">bii</add></subst></mod> e mi detti a sperare un glorioso avvenire.
+                                <add place="inline">bii</add></subst></mod> e mi detti a sperare un glorioso avvenire.
                     </mod>
                 </p>
                 <p rend="indent">
@@ -1494,25 +1531,25 @@
                         <lb n="4"/>Come ho già detto, principiai questo mio lavoro nel novembre del 1905,
                         <lb n="5"/>quando io camminav
                         <mod change="#strato-2"><subst><del rend="overwritten">a</del>
-                        <add place="superimposed">o</add></subst></mod> in 13 anni e frequentavo 2 ginna-
+                                <add place="superimposed">o</add></subst></mod> in 13 anni e frequentavo 2 ginna-
                         <lb n="6"/>siale. Tostochè mi venne in testa di vendicarmi di quella
                         <lb n="7"/>creduta oppressione 
                         <mod change="#strato-2"><subst><del rend="strikethrough">com</del>
-                        <add place="inline">scrivendo</add></subst></mod> un’opera che ritraesse simboli-
+                                <add place="inline">scrivendo</add></subst></mod> un’opera che ritraesse simboli-
                         <lb n="8"/>camente il suo carattere, mi s’affacciò davanti la difficoltà
                         <lb n="9"/>della forma. La metrica non <mod change="#strato-2">l
                             <del rend="overwritten" xml:id="del_o">o</del>
                             <add place="superimposed" xml:id="agg_ap">’</add>avevo mai vist
                             <del rend="overwritten" xml:id="del_visto">o</del>
                             <add place="superimposed" xml:id="agg_vista">a</add>
-                        <substJoin target="#del_o #agg-ap"/>
-                        <substJoin target="#del_visto #agg_vista"/>
+                            <substJoin target="#del_o #agg-ap"/>
+                            <substJoin target="#del_visto #agg_vista"/>
                         </mod> e 
                         <mod change="#strato-2">
                             <subst><del rend="overwritten">a</del>
-                        <add place="superimposed">i</add></subst></mod> 
+                                <add place="superimposed">i</add></subst></mod> 
                         <mod change="#strato-2"><subst><del rend="strikethrough">ver</del>
-                        <add place="inline">pochi<lb n="10"/>versi</add></subst></mod>
+                                <add place="inline">pochi<lb n="10"/>versi</add></subst></mod>
                         ch’avevo fatti erano fatti a orecchio. Nell’Antologie avevo
                         <lb n="11"/>trovato qualche regola metrica, ma non serviva. Un giorno
                         <lb n="12"/>vidi nella scansia del mio prefetto un libro del <persName ref="#Finzi">Finzi </persName>intitolato “Arte del Di-
@@ -1521,7 +1558,7 @@
                         <lb n="15"/>me l’avrebbe negato, e m’avrebbe quel ch’era peggio umiliato dicendo-
                         <lb n="16"/>mi: «Ancora non è roba pe’ tuoi denti». 
                         
-
+                        
                     </mod>
                 </p>
             </div>
@@ -1530,5 +1567,7 @@
                 <!-- strato 1-->
             </div>
         </body>
+        <back>
+        </back>
     </text>
 </TEI>
