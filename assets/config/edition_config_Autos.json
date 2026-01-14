@@ -97,7 +97,7 @@
           "enable": true
         },
         {
-          "value": "event",
+          "value": "eventName",
           "label": "events",
           "color": "#fcfc60",
           "enable": true
@@ -138,7 +138,7 @@
     "type=orthographic"
   ],
   "defaultEdition": "changesView",
-  "defaultViewMode": "imageText",
+  "defaultViewMode": "text",
   "proseVersesToggler": true,
   "defaultTextFlow": "prose",
   "verseNumberPrinter": 5,

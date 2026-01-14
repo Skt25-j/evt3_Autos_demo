@@ -111,6 +111,11 @@
                         <date>1800</date>
                     </bibl>
                 </listBibl>
+                <listEvent>
+                    <event xml:id="Tentato_suicidio">
+                        <eventName>Tentato suicidio</eventName>
+                    </event>
+                </listEvent>
             </sourceDesc>
         </fileDesc>
         <profileDesc>
@@ -268,7 +273,7 @@
                         <lb n="9"/>d’allora, oggi sarei forse più
                         <lb n="10"/>fortunato. Forse?!.
                         <lb n="11"/><add rend="indent-center">Tuscano</add> <!-- Poco ortodosso-->
-                        <lb n="12"/>1921</mod> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
+                        <lb n="12"/><eventName ref="#Tentato_suicidio">1921</eventName></mod> <!-- Ok uso di subst perchè siamo difronte al medesimo strato scrittorio: ènuna correzione currenti calamo-->
                 </ab>
             </div>
             <div type="page" xml:id="Quaderno1_1r">
@@ -446,7 +451,7 @@
                     credendo di far sempre bene e sempre me-<lb n="10"/>glio degli altri. Per questo senso appunto non volevo<lb n="11"/>mai
                     avere sbagliato, fingevo d’aver saputo quella data<lb n="12"/>regola confessando d’aver errato per distrazione.
                     <hi rend="underline">«Sca-</hi><lb n="13"/><hi rend="underline">pato sempre, duro mai</hi>» ho sempre detto.</p>
-                <p><lb n="14"/>, come avviene a tutti i superbi,
+                <p><lb n="14"/>E, come avviene a tutti i superbi,
                     <mod change="#strato-0"><add xml:id="add_mi" place="above">mi</add> avveniva <del rend="strikethrough" xml:id="del_a_me">a me</del>
                         <substJoin target="#add_mi #del_a_me"/>
                     </mod> di non<lb n="15"/>voler essere scoperto da’ maggiori di questo
@@ -666,7 +671,7 @@
                             <add place="superimposed">foglio</add></subst></mod> elegante e la nascosi fra <mod change="#strato-0">
                         <subst> <del rend="strikethrough"></del>
                             <add place="above">le pagine</add></subst></mod>
-                    <lb n="4"/>di un libro come un tesoro prezioso che non si dovesse ancora mani
+                    <lb n="4"/>di un libro come un tesoro prezioso che non si dovesse ancora mani-
                     <lb n="5"/>festare e che diven<mod change="#strato-0">
                         <subst><del rend="overwritten"><gap quantity="4"  unit="char"/></del><add place="superimposed">isse</add> 
                         </subst><del rend="strikethrough">sen</del>
