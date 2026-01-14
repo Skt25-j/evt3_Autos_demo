@@ -138,7 +138,7 @@
     "type=orthographic"
   ],
   "defaultEdition": "changesView",
-  "defaultViewMode": "documentalMixed",
+  "defaultViewMode": "imageText",
   "proseVersesToggler": true,
   "defaultTextFlow": "prose",
   "verseNumberPrinter": 5,

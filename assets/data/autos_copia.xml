@@ -21,20 +21,51 @@
                     </interpGrp>
                 </edition>
             </editionStmt>
-            <publicationStmt>
+        <publicationStmt>
+        <authority>Università degli Studi di Salerno</authority>
                 <authority>Archivio Stefano Tuscano</authority>
-            </publicationStmt>
+        <date>2023-2026</date>
+        <availability status="unknown">
+          <p>Not to ricirculate.</p>
+        </availability>
+      </publicationStmt>
             <sourceDesc>
-                <listWit>
-                    <witness xml:id="MS_Autos">Manoscritto di Autos <msDesc>
+                <msDesc>
                             <msIdentifier>
+                        <country>Italy</country>
                                 <settlement>Pienza</settlement>
                                 <repository>Archivio Stefano Tuscano presso Fondazione San Carlo Borromeo</repository>
+                        <msName>Autos</msName>
+                        <msName>Primi Appunti Autobiografici</msName>
                             </msIdentifier>
+                    <msContents>
+                        <summary><hi rend="italic">Autos</hi> è il titolo che Stefano Tuscano assegna alla prima coppia della serie di quindici quaderni che compongono le sue memorie.
+                            Scritti tra il 1910 e il 1911 - ma rimaneggiati anche negli anni succcessivi - si profilano come documenti fondamentali per ricostruire la biografia e il corpus dello scrittore pientino. </summary>
+                        <textLang xml:lang="it">Italiano</textLang>
+                        <msItem>
+                            <author ref="#Stefano_Tuscano">Stefano Tuscano</author>
+                            <title>Autos</title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="codex">
+                            <supportDesc material="paper">
+                                <support>Due quaderni di struttura simile</support>
+                                <extent>
+                                    <measure unit="leaf" quantity="51">51 carte complessive (27 nel primo quaderno, 24 nel secondo)</measure>
+                                    <dimensions unit="cm">
+                                        <height>x</height>
+                                        <width>y</width> <!-- Aggiungere le dimensioni precise-->
+                                    </dimensions>
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote xml:id="h1">Mano autografa di Stefano Tuscano.</handNote>
+                        </handDesc>
+                    </physDesc>
                         </msDesc>
-                    </witness>
-                    <witness xml:id="Autos">Edizione <emph rend="italic">Autos</emph></witness>
-                </listWit>
+                    
                 <listPerson>
                     <person xml:id="Alfieri">
                         <persName>Vittorio Alfieri</persName>
@@ -60,7 +91,13 @@
                             Ugo Foscolo
                         </persName>
                         <note>
-                            <p>1778 – 1827. Poeta, scrittore e patriota italiano di origine greca, esponente del neoclassicismo e del preromanticismo.</p></note>
+                            <p>1778–1827. Poeta, scrittore e patriota italiano di origine greca, esponente del neoclassicismo e del preromanticismo.</p></note>
+                    </person>
+                    <person xml:id="Luigia_Pallavicini">
+                        <persName>Luigia Pallavicini</persName>
+                        <note>
+                            <p>1772-1841. Nobildonna italiana a cui Ugo Foscolo dedicò l'Ode citata.</p>
+                        </note>
                     </person>
                 </listPerson>
                 <listRelation>
@@ -114,6 +151,35 @@
             </tagsDecl>
         </encodingDesc>
     </teiHeader>
+    <facsimile rend="double">
+        <graphic n="Copertina" width="1820px" height="1440px" url="Copertina.jpg"/>
+        <graphic n="Cop_int-1r" width="1820px" height="1440px" url="Cop_int-1r.jpeg"/>
+        <graphic n="1v-2r" width="1820px" height="1440px" url="1v-2r.jpg"/>
+        <graphic n="2v-3r" width="1820px" height="1440px" url="2v-3r.jpg"/>
+        <graphic n="3v-4r" width="1820px" height="1440px" url="3v-4r.jpg"/>
+        <graphic n="4v-5r" width="1820px" height="1440px" url="4v-5r.jpg"/>
+        <graphic n="5v-6r" width="1820px" height="1440px" url="5v-6r.jpg"/>
+        <graphic n="6v-7r" width="1820px" height="1440px" url="6v-7r.jpg"/>
+        <graphic n="7v-8r;9r" width="1820px" height="1440px" url="7v-8r;9r.jpg"/>
+        <graphic n="9v-10r" width="1820px" height="1440px" url="9v-10r.jpg"/>
+        <graphic n="10v-11r" width="1820px" height="1440px" url="10v-11r.jpg"/>
+        <graphic n="11v-12r" width="1820px" height="1440px" url="11v-12r.jpg"/>
+        <graphic n="12v-13r" width="1820px" height="1440px" url="12v-13r.jpg"/>
+        <graphic n="13v-14r" width="1820px" height="1440px" url="13v-14r.jpg"/>
+        <graphic n="14v-15r" width="1820px" height="1440px" url="14v-15r.jpg"/>
+        <graphic n="15v-16r" width="1820px" height="1440px" url="15v-16r.jpg"/>
+        <graphic n="16v-17r" width="1820px" height="1440px" url="16v-17r.jpg"/>
+        <graphic n="17v-18r" width="1820px" height="1440px" url="17v-18r.jpg"/>
+        <graphic n="18v-19r" width="1820px" height="1440px" url="18v-19r.jpg"/>
+        <graphic n="19v-20r" width="1820px" height="1440px" url="19v-20r.jpg"/>
+        <graphic n="20v-21r" width="1820px" height="1440px" url="20v-21r.jpg"/>
+        <graphic n="21v-22r" width="1820px" height="1440px" url="21v-22r.jpg"/>
+        <graphic n="22v-23r" width="1820px" height="1440px" url="22v-23r.jpg"/>
+        <graphic n="23v-24r" width="1820px" height="1440px" url="23v-24r.jpg"/>
+        <graphic n="24v-25r" width="1820px" height="1440px" url="24v-25r.jpg"/>
+        <graphic n="25v-26r" width="1820px" height="1440px" url="25v-26r.jpg"/>
+        <graphic n="26v-27r" width="1820px" height="1440px" url="26v-27r.jpg"/>
+    </facsimile> <!-- Problema dello sdoppiamento della navbar: probabilmente dipende dal changeView attivo-->
     <text>
         <front> <!--Conflitto se inserisco qui del testo non si visulizza la pagina precedente al primo div del body: perchè?-->
         </front>
@@ -493,7 +559,8 @@
                     </mod>ri, <mod change="#strato-0">
                         <del><gap quantity="2"  unit="char"/></del>
                     </mod>tenendo
-                    <lb n="3"/>per esempio l’<title><ref target="#OdePallavicini">Ode</ref></title> del <persName ref="#Foscolo">Foscolo</persName> a Luigia Pallavicini,<note n="1" type="critical" resp="#ST">Nota di spiegazione sull'Ode di Foscolo; magari link al testo</note>
+                    <lb n="3"/>per esempio l’<title><ref target="#OdePallavicini">Ode</ref></title> del <persName ref="#Foscolo">Foscolo</persName> a 
+                    <persName ref="#Luigia_Pallavicini">Luigia Pallavicini</persName>,<note n="1" type="critical" resp="#ST">Nota di spiegazione sull'Ode di Foscolo; magari link al testo</note>
                     <lb n="4"/>trovata in un librettino<mod change="#strato-0">
                         <del rend="strikethrough">tutto</del>
                     </mod>che credo avrebbe
@@ -616,7 +683,7 @@
                 <pb n="6r1" facs="6r.jpg"/>
                 <fw place="top_right" type="pageNum"><mod change="#strato-1"><add>6</add></mod></fw>
                 <p rend="indent">
-                    <lb n="1"/>quando il maestro o la mamma m’aveva <mod change="#strato-0">
+                    <lb n="1"/>quando il maestro o la <persName ref="Anna_Riedi">mamma</persName> m’aveva <mod change="#strato-0">
                         <subst><del rend="strikethrough">bro</del>
                             <add place="inline">rimproverato</add></subst></mod> la condotta,
                     <lb n="2"/>e il mio <mod change="#strato-0">
@@ -748,7 +815,7 @@
                         <del rend="strikethrough">mi</del>
                     </mod> fui avvisato da mia sorella e amorosamente
                     <lb n="13"/>rimproverato di una certa insubordinazione commessa a scuola,
-                    <lb n="14"/>per la quale la mamma, secondo il solito, m’avrebbe tolto una pietanza
+                    <lb n="14"/>per la quale la <persName ref="Anna_Riedi">mamma</persName>, secondo il solito, m’avrebbe tolto una pietanza
                     <lb n="15"/>a cena. Io mi portai allora come un uomo uso
                     <lb n="16"/>a stare senza cena 
                     <mod change="#strato-0"><add place="above">o poco meno</add></mod>, senza adirarsi con 
@@ -778,7 +845,7 @@
                     <lb n="2"/>come d’un delitto, 
                     <mod change="#strato-0">
                         <subst><del rend="strikethrough">contro</del><add place="inline">in specie </add></subst>
-                    </mod> per avere addolorato la mamma, alla quale fin da’ primi anni mi sentiva fortemente 
+                    </mod> per avere addolorato la <persName ref="Anna_Riedi">mamma</persName>, alla quale fin da’ primi anni mi sentiva fortemente 
                     <mod change="#strato-0"><subst><del rend="strikethrough">attratto dall’affetto </del>
                             <add place="below">avvinto</add></subst></mod>
                     <lb n="3"/>da un affetto ch’io credo, massime oggi, raro; forse, son quasi
@@ -1224,7 +1291,7 @@
                     <lb n="3"/>rimbalzo a <mod change="#strato-0">
                         <del rend="strikethrough">ve</del></mod> non veder di buon occhio né me, né quello
                     <lb n="4"/>che sapevo fare. Spesso piansi, <mod change="#strato-0"><add place="above">spesso</add></mod> disperai, spesso sospi
-                    <lb n="5"/>rai le carezze della mamma, spesso mi pentii d’aver
+                    <lb n="5"/>rai le carezze della <persName ref="Anna_Riedi">mamma</persName>, spesso mi pentii d’aver
                     <lb n="6"/>
                     <mod change="#strato-0"><subst><del rend="strikethrough">preso</del>
                             <add place="inline">vestito</add></subst></mod> quell’abito, o meglio d’essermi messi sotto
@@ -1299,7 +1366,7 @@
                             
                             <add place="inline"><del rend="strikethrough" seq="5">mia </del>
                                 <lb n="2"/><add place="above" seq="6">
-                                    la mia cara</add> mamma</add></subst>
+                                    la mia cara</add> <persName ref="Anna_Riedi">mamma</persName></add></subst>
                         
                     </mod> <note n="1" resp="#ST" type="critical">
                         La catena correttoria vede diversi stadi intermedi, prima dell’approdo all’ultima lezione:

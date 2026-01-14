@@ -5,14 +5,14 @@
 			"iconSet": "fas",
 			"id": "imageImage",
 			"label": "Image-Image",
-			"enable": false
+			"enable": true
 		},
 		{
 			"icon": "image",
 			"iconSet": "fas",
 			"id": "imageOnly",
 			"label": "Image only",
-			"enable": false
+			"enable": true
 		},
 		{
 			"icon": "txt",
